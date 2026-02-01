@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aisha's Schedule</title>
+    <title>Aisha's Final Sem Exams</title>
     <style>
         * {
             margin: 0;
@@ -208,9 +208,6 @@
         .audit { border-left-color: #1abc9c; }
         .audit .days-left { color: #1abc9c; }
 
-        .ibs { border-left-color: #9d59ac; }
-        .ibs .days-left { color: #9d59ac; }
-
         .checkbox-container {
             margin-right: 20px;
         }
@@ -232,157 +229,141 @@
 <body>
     <div class="container">
         <header>
-            <h1>Aisha's Schedule</h1>
-            <p class="subtitle">Feb-Mar-Apr-You've Got This!</p>
+            <h1>Aisha's Final Sem Exams</h1>
+            <p class="subtitle">April/May 2026 - You've Got This!</p>
         </header>
 
         <div class="countdown-main">
-            <h2>⏰ Subject to be completed in:</h2>
+            <h2>⏰ Next Exam In:</h2>
             <div id="next-exam-countdown">Loading...</div>
             <div id="next-exam-name"></div>
         </div>
 
         <div class="exams-list">
-            <div class="exam-card accounts" data-date="2026-02-06" onclick="toggleComplete(this)">
+            <div class="exam-card accounts" data-date="2026-05-04" onclick="toggleComplete(this)">
                 <div class="checkbox-container">
                     <input type="checkbox" onclick="event.stopPropagation(); toggleComplete(this.parentElement.parentElement)">
                 </div>
                 <div class="exam-info">
-                    <div class="exam-date">📅 06th February, 2026</div>
-                    <div class="exam-name">Subject 1 Part 2</div>
-                    <div class="exam-countdown" data-date="2026-02-06"></div>
+                    <div class="exam-date">📅 Monday, 04th May 2026</div>
+                    <div class="exam-name">Subject 1</div>
+                    <div class="exam-countdown" data-date="2026-05-04"></div>
                 </div>
                 <div class="exam-right">
-                    <div class="days-left" data-date="2026-02-06">--</div>
+                    <div class="days-left" data-date="2026-05-04">--</div>
                     <div class="days-label">days left</div>
                 </div>
             </div>
 
-            <div class="exam-card law" data-date="2026-02-22" onclick="toggleComplete(this)">
+            <div class="exam-card law" data-date="2026-05-04" onclick="toggleComplete(this)">
                 <div class="checkbox-container">
                     <input type="checkbox" onclick="event.stopPropagation(); toggleComplete(this.parentElement.parentElement)">
                 </div>
                 <div class="exam-info">
-                    <div class="exam-date">📅 22nd February, 2026</div>
+                    <div class="exam-date">📅 Monday, 04th May 2026</div>
                     <div class="exam-name">Subject 2</div>
-                    <div class="exam-countdown" data-date="2026-02-22"></div>
+                    <div class="exam-countdown" data-date="2026-05-04"></div>
                 </div>
                 <div class="exam-right">
-                    <div class="days-left" data-date="2026-02-22">--</div>
+                    <div class="days-left" data-date="2026-05-04">--</div>
                     <div class="days-label">days left</div>
                 </div>
             </div>
 
-            <div class="exam-card tax" data-date="2026-03-05" onclick="toggleComplete(this)">
+            <div class="exam-card tax" data-date="2026-05-05" onclick="toggleComplete(this)">
                 <div class="checkbox-container">
                     <input type="checkbox" onclick="event.stopPropagation(); toggleComplete(this.parentElement.parentElement)">
                 </div>
                 <div class="exam-info">
-                    <div class="exam-date">📅 05th March, 2026</div>
-                    <div class="exam-name">Subject 5</div>
-                    <div class="exam-countdown" data-date="2026-03-05"></div>
+                    <div class="exam-date">📅 Tuesday, 05th May 2026</div>
+                    <div class="exam-name">Subject 3</div>
+                    <div class="exam-countdown" data-date="2026-05-05"></div>
                 </div>
                 <div class="exam-right">
-                    <div class="days-left" data-date="2026-03-05">--</div>
+                    <div class="days-left" data-date="2026-05-05">--</div>
                     <div class="days-label">days left</div>
                 </div>
             </div>
 
-            <div class="exam-card costing" data-date="2026-03-14" onclick="toggleComplete(this)">
+            <div class="exam-card costing" data-date="2026-05-05" onclick="toggleComplete(this)">
                 <div class="checkbox-container">
                     <input type="checkbox" onclick="event.stopPropagation(); toggleComplete(this.parentElement.parentElement)">
                 </div>
                 <div class="exam-info">
-                    <div class="exam-date">📅 14th March, 2026</div>
-                    <div class="exam-name">Subject 3 & 6 Part 1</div>
-                    <div class="exam-countdown" data-date="2026-03-14"></div>
+                    <div class="exam-date">📅 Tuesday, 05th May 2026</div>
+                    <div class="exam-name">Subject 4</div>
+                    <div class="exam-countdown" data-date="2026-05-05"></div>
                 </div>
                 <div class="exam-right">
-                    <div class="days-left" data-date="2026-03-14">--</div>
+                    <div class="days-left" data-date="2026-05-05">--</div>
                     <div class="days-label">days left</div>
                 </div>
             </div>
             
-            <div class="exam-card fmsm" data-date="2026-03-27" onclick="toggleComplete(this)">
+            <div class="exam-card fmsm" data-date="2026-05-06" onclick="toggleComplete(this)">
                 <div class="checkbox-container">
                     <input type="checkbox" onclick="event.stopPropagation(); toggleComplete(this.parentElement.parentElement)">
                 </div>
                 <div class="exam-info">
-                    <div class="exam-date">📅 27th March, 2026</div>
-                    <div class="exam-name">Subject 3 & 6 Part 3</div>
-                    <div class="exam-countdown" data-date="2026-03-27"></div>
+                    <div class="exam-date">📅 Wednesday, 06th May 2026</div>
+                    <div class="exam-name">Subject 5</div>
+                    <div class="exam-countdown" data-date="2026-05-06"></div>
                 </div>
                 <div class="exam-right">
-                    <div class="days-left" data-date="2026-03-27">--</div>
+                    <div class="days-left" data-date="2026-05-06">--</div>
                     <div class="days-label">days left</div>
                 </div>
             </div>
 
-            <div class="exam-card audit" data-date="2026-04-07" onclick="toggleComplete(this)">
+            <div class="exam-card audit" data-date="2026-05-06" onclick="toggleComplete(this)">
                 <div class="checkbox-container">
                     <input type="checkbox" onclick="event.stopPropagation(); toggleComplete(this.parentElement.parentElement)">
                 </div>
                 <div class="exam-info">
-                    <div class="exam-date">📅 07th April, 2026</div>
-                    <div class="exam-name">Subject 4</div>
-                    <div class="exam-countdown" data-date="2026-04-07"></div>
+                    <div class="exam-date">📅 Wednesday, 06th May 2026</div>
+                    <div class="exam-name">Subject 6</div>
+                    <div class="exam-countdown" data-date="2026-05-06"></div>
                 </div>
                 <div class="exam-right">
-                    <div class="days-left" data-date="2026-04-07">--</div>
-                    <div class="days-label">days left</div>
-                </div>
-            </div>
-
-            <div class="exam-card ibs" data-date="2026-04-20" onclick="toggleComplete(this)">
-                <div class="checkbox-container">
-                    <input type="checkbox" onclick="event.stopPropagation(); toggleComplete(this.parentElement.parentElement)">
-                </div>
-                <div class="exam-info">
-                    <div class="exam-date">📅 20th April, 2026</div>
-                    <div class="exam-name">Subject 3 & 6 Part 2</div>
-                    <div class="exam-countdown" data-date="2026-04-20"></div>
-                </div>
-                <div class="exam-right">
-                    <div class="days-left" data-date="2026-04-20">--</div>
+                    <div class="days-left" data-date="2026-05-06">--</div>
                     <div class="days-label">days left</div>
                 </div>
             </div>
         </div>
 
         <div class="progress-container">
-            <h3>📊 Syllabus Progress</h3>
-            <p style="color: #aaa; margin-top: 5px;"><span id="completed-count">0</span>/7 Targets completed</p>
+            <h3>📊 Exam Progress</h3>
+            <p style="color: #aaa; margin-top: 5px;"><span id="completed-count">0</span>/6 exams completed</p>
             <div class="progress-bar">
                 <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
             </div>
         </div>
 
         <div class="motivation">
-            <span>"Stay Disciplined Qt"</span>
+            <span>"Stay Calm Deer, You'll Do It Well"</span>
             <p style="margin-top: 15px;">All the best, Aisha! 🌟</p>
         </div>
 
         <footer>
-            <p>Click on the subject card to mark as completed</p>
+            <p>Click on an exam card to mark as completed</p>
         </footer>
     </div>
 
     <script>
         const exams = [
-            { date: '2026-02-06', name: 'Subject 1 Part 2' },
-            { date: '2026-02-20', name: 'Subject 2' },
-            { date: '2026-03-05', name: 'Subject 5' },
-            { date: '2026-03-14', name: 'Subject 3 & 6 Part 1' },
-            { date: '2026-03-27', name: 'Subject 3 & 6 Part 3' },
-            { date: '2026-04-07', name: 'Subject 4' },
-            { date: '2026-04-20', name: 'Subject 3 & 6 Part 2' }
+            { date: '2026-05-04', name: 'Subject 1' },
+            { date: '2026-05-04', name: 'Subject 2' },
+            { date: '2026-05-05', name: 'Subject 3' },
+            { date: '2026-05-05', name: 'Subject 4' },
+            { date: '2026-05-06', name: 'Subject 5' },
+            { date: '2026-05-06', name: 'Subject 6' }
         ];
 
         function updateCountdowns() {
             const now = new Date();
 
             document.querySelectorAll('.days-left[data-date]').forEach(el => {
-                const examDate = new Date(el.dataset.date + 'T23:59:00');
+                const examDate = new Date(el.dataset.date + 'T10:00:00');
                 const diff = examDate - now;
                 const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
@@ -398,7 +379,7 @@
             });
 
             document.querySelectorAll('.exam-countdown[data-date]').forEach(el => {
-                const examDate = new Date(el.dataset.date + 'T23:59:00');
+                const examDate = new Date(el.dataset.date + 'T10:00:00');
                 const diff = examDate - now;
 
                 if (diff < 0) {
@@ -414,7 +395,7 @@
             // Update next exam countdown
             let nextExam = null;
             for (let exam of exams) {
-                const examDate = new Date(exam.date + 'T23:59:00');
+                const examDate = new Date(exam.date + 'T10:00:00');
                 if (examDate > now) {
                     nextExam = exam;
                     break;
@@ -425,7 +406,7 @@
             const nextName = document.getElementById('next-exam-name');
 
             if (nextExam) {
-                const examDate = new Date(nextExam.date + 'T23:59:00');
+                const examDate = new Date(nextExam.date + 'T10:00:00');
                 const diff = examDate - now;
                 const days = Math.floor(diff / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
