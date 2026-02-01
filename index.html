@@ -208,6 +208,9 @@
         .audit { border-left-color: #1abc9c; }
         .audit .days-left { color: #1abc9c; }
 
+        .ibs { border-left-color: #7abc9c; }
+        .ibs .days-left { color: #7abc9c; }
+
         .checkbox-container {
             margin-right: 20px;
         }
@@ -329,11 +332,26 @@
                     <div class="days-label">days left</div>
                 </div>
             </div>
+
+            <div class="exam-card ibs" data-date="2026-04-20" onclick="toggleComplete(this)">
+                <div class="checkbox-container">
+                    <input type="checkbox" onclick="event.stopPropagation(); toggleComplete(this.parentElement.parentElement)">
+                </div>
+                <div class="exam-info">
+                    <div class="exam-date">📅 20th April, 2026</div>
+                    <div class="exam-name">Subject 3 & 6 Part 2</div>
+                    <div class="exam-countdown" data-date="2026-04-20"></div>
+                </div>
+                <div class="exam-right">
+                    <div class="days-left" data-date="2026-04-20">--</div>
+                    <div class="days-label">days left</div>
+                </div>
+            </div>
         </div>
 
         <div class="progress-container">
             <h3>📊 Syllabus Progress</h3>
-            <p style="color: #aaa; margin-top: 5px;"><span id="completed-count">0</span>/6 Subjects completed</p>
+            <p style="color: #aaa; margin-top: 5px;"><span id="completed-count">0</span>/Subjects completed</p>
             <div class="progress-bar">
                 <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
             </div>
@@ -356,7 +374,8 @@
             { date: '2026-03-05', name: 'Subject 5' },
             { date: '2026-03-14', name: 'Subject 3 & 6 Part 1' },
             { date: '2026-03-27', name: 'Subject 3 & 6 Part 3' },
-            { date: '2026-04-07', name: 'Subject 4' }
+            { date: '2026-04-07', name: 'Subject 4' },
+            { date: '2026-04-20', name: 'Subject 3 & 6 Part 2' }
         ];
 
         function updateCountdowns() {
